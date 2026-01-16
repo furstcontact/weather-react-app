@@ -20,8 +20,7 @@ export default function Weather(props) {
       wind: data.wind.speed,
       city: data.city,
       description: data.condition.description,
-      iconUrl:
-        "https://www.gstatic.com/weather/conditions/v3/svg/cloudy_light.svg",
+      icon: data.condition.icon,
     });
   }
   function handleSubmit(event) {
