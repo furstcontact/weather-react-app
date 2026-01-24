@@ -6,14 +6,6 @@
   background-color: black;
 }
 
-body {
-  background-image: url("../../empty-hallway-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 100vh;
-}
-
 .App footer {
   margin-top: 20px;
   font-size: 14px;
