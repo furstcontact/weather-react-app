@@ -1,6 +1,17 @@
 .App {
-  max-width: 700px;
+  max-width: 600px;
   margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: black;
+}
+
+body {
+  background-image: url("../../empty-hallway-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
 }
 
 .App footer {

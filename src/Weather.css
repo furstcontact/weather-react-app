@@ -1,12 +1,11 @@
 .Weather {
   font-family: Arial, sans-serif;
   border: 3px solid black;
-  color: #ce0681;
-  padding: 16px;
-  margin: 30px auto;
-
+  color: #111111;
+  padding: 25px;
+  margin: 50px 30px 50px 30px;
   border-radius: 4px;
-  background-color: rgb(7, 186, 240);
+  background-color: rgb(231, 238, 240);
 }
 
 .Weather form {
@@ -50,4 +49,9 @@
   position: relative;
   line-height: 1;
   top: -20px;
+}
+
+.WeatherDetails {
+  margin: 20px;
+  font-size: 16px;
 }
