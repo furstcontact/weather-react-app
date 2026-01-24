@@ -2,7 +2,6 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherDetails(props) {
   return (
@@ -21,16 +20,15 @@ export default function WeatherDetails(props) {
           </div>
           <div>
             <WeatherTemperature celsius={props.data.temperature} />
-            <WeatherForecast />
           </div>
         </div>
-      </div>
-      <div className="col-6">
-        <ul>
-          <li>Precipitation: 10%</li>
-          <li>Humidity: {props.data.humidity}%</li>
-          <li>{props.data.wind} km/h</li>
-        </ul>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 10%</li>
+            <li>Humidity: {props.data.humidity}%</li>
+            <li>{props.data.wind} km/h</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

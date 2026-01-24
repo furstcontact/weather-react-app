@@ -23,11 +23,15 @@ export default function WeatherIcon(props) {
     "mist-night": "FOG",
   };
 
+  const cleanCode = props.code?.replace(".png", "");
+  const mappedIcon = codeMapping[cleanCode];
+
   return (
     <ReactAnimatedWeather
-      icon={codeMapping[props.code]}
+      icon={mappedIcon}
+      color="goldenrod"
       size={props.size}
-      color="#4a90e2"
+      animate={true}
     />
   );
 }
